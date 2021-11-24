@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h3><a href="Home.html"><img src="logotipo TP_bandtec.jpeg" alt="" style="width: 200px;"></a></h3>
+            <ul class="navbar">
+                <li><a href="Home.html"> Home</a></li>
+                <li><a href="sobrenos.html">Sobre nós</a></li>
+                <li><a href="simulador.html">Simulação</a></li>
+                <li><a href="instalacao.html">Instalação</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li class="active"><a href="">Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="formLogin">
+            <h2>Login</h2>
+            <div>
+                <span>E-mail:</span>
+                <input type="email" name="email" id="email" placeholder=" Insira seu E-mail">
+            </div>
+            <div>
+                <span>Senha:</span>
+                <input type="password" name="senha" id="senha" placeholder=" **********">
+            </div>
+
+            <button onclick="entrar()"><span>Entrar</span></button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Technological Parking © 2021</p>
+    </div>
+    
+</body>
+
+</html>
+
+
+</body>
+
+</html>
+
+
+<script>
+  
+    function entrar() {
+       
+        if ((senha.value == '123') && (email.value == 'admin@techpark.com')) {
+            window.location = "index.html";
+        }
+        else {
+            alert('Email ou Senha invalidos');
+        }
+    }
+
+</script>
